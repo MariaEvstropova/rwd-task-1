@@ -19,7 +19,7 @@
         var width = target.getAttribute("data-width");
 
         if (!!index) {
-          var base = "http://res.cloudinary.com/mariaevstropova/image/upload/";
+          var base = "https://res.cloudinary.com/mariaevstropova/image/upload/";
           var srcSet = base + "f_auto,q_75,w_256/img-" + index + ".jpg 256w,"
                     + base + "f_auto,q_75,w_512/img-" + index + ".jpg 512w,"
                     + base + "f_auto,q_75,w_1024/img-" + index + ".jpg 1024w,"
