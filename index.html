@@ -19,7 +19,7 @@
       <div class="content-section">
         <div class="gallery gallery__inner">
 
-          <div class="gallery__item">
+          <div class="gallery__item" data-index="1" data-width="2577">
             <!-- Используем оптимизацию изображений, предоставляемую cloudinary.com. Сжатие - 70%, формат изображения - автоматически определяется браузером. -->
             <!-- Подробнее - http://cloudinary.com/blog/responsive_images_with_srcset_sizes_and_cloudinary -->
             <img class="gallery__image" alt="photo-1"
@@ -38,7 +38,7 @@
             </div>
           </div>
 
-          <div class="gallery__item">
+          <div class="gallery__item" data-index="2" data-width="3264">
             <img class="gallery__image" alt="photo-2"
                  srcset="http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_256/img-2.jpg 256w,
                          http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_512/img-2.jpg 512w,
@@ -56,7 +56,7 @@
             </div>
           </div>
 
-          <div class="gallery__item">
+          <div class="gallery__item" data-index="3" data-width="1993">
             <img class="gallery__image" alt="photo-3"
                  srcset="http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_256/img-3.jpg 256w,
                          http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_512/img-3.jpg 512w,
@@ -73,7 +73,7 @@
             </div>
           </div>
 
-          <div class="gallery__item">
+          <div class="gallery__item" data-index="4" data-width="2560">
             <img class="gallery__image" alt="photo-4"
                  srcset="http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_256/img-4.jpg 256w,
                          http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_512/img-4.jpg 512w,
@@ -90,7 +90,7 @@
             </div>
           </div>
 
-          <div class="gallery__item">
+          <div class="gallery__item" data-index="5" data-width="2854">
             <img class="gallery__image" alt="photo-5"
                  srcset="http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_256/img-5.jpg 256w,
                          http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_512/img-5.jpg 512w,
@@ -107,7 +107,7 @@
             </div>
           </div>
 
-          <div class="gallery__item">
+          <div class="gallery__item" data-index="6" data-width="4000">
             <img class="gallery__image" alt="photo-6"
                  srcset="http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_256/img-6.jpg 256w,
                          http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_512/img-6.jpg 512w,
@@ -125,7 +125,7 @@
             </div>
           </div>
 
-          <div class="gallery__item">
+          <div class="gallery__item" data-index="7" data-width="3456">
             <img class="gallery__image" alt="photo-7"
                  srcset="http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_256/img-7.jpg 256w,
                          http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_512/img-7.jpg 512w,
@@ -153,15 +153,8 @@
       </footer>
       <div class="page-overlay">
         <div class="page-overlay__wrapper">
-          <img class="page-overlay__image" alt="photo-7"
-               srcset="http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_256/img-7.jpg 256w,
-                     http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_512/img-7.jpg 512w,
-                     http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_1024/img-7.jpg 1024w,
-                     http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_2560/img-7.jpg 2560w,
-                     http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75/img-7.jpg 3456w"
-               sizes="100vw"
-               src="http://res.cloudinary.com/mariaevstropova/image/upload/img-7.jpg"
-          />
+          <div class="button page-overlay__close-button">&times;</div>
+          <img class="page-overlay__image" alt="detailed-photo"/>
         </div>
       </div>
     </div>
