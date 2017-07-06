@@ -215,13 +215,19 @@ html {
 
 .button {
   font-size: 2rem;
-  color: #808080;
+  color: #fff;
   cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  line-height: 2rem;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,.6);
 }
 
 .page-overlay__close-button {
   position: absolute;
-  top: -.25rem;
-  right: 10px;
+  top: 0;
+  right: 0;
   z-index: 2;
 }
