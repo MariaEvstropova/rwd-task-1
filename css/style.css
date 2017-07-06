@@ -63,14 +63,25 @@ html {
 
 /* gallery */
 .gallery__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 @media (min-width: 550px) {
   .gallery__inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 }
@@ -79,6 +90,8 @@ html {
   height: 50vh;
   position: relative;
   margin: 10px;
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
   flex: auto;
   cursor: pointer;
 }
@@ -96,6 +109,7 @@ html {
   left: 0;
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
   /* Полифил для Edge и IE */
   font-family: 'object-fit: cover;'
@@ -107,15 +121,19 @@ html {
   }
 
   .gallery__item:nth-child(4n) {
+    -ms-flex-preferred-size: 460px;
     flex-basis: 460px;
   }
 
   .gallery__item:nth-child(7n+1) {
+    -ms-flex-preferred-size: 550px;
     flex-basis: 550px;
   }
 }
 
 .gallery__cover {
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
   transition: .5s ease;
   opacity: 0;
   position: absolute;
@@ -124,10 +142,9 @@ html {
 
   -webkit-transform: translate(-50%);
   -ms-transform: translate(-50%);
-  -o-transform: translate(-50%);
-  -moz-transform: translate(-50%);
   transform: translate(-50%);
   /* Хак для плавной анимации */
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 
   width: 100%;
@@ -135,6 +152,8 @@ html {
   background-color: #808080;
   background-color: rgba(0,0,0,.5);
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -165,11 +184,16 @@ html {
   bottom: 0;
   width: 100%;
   color: #606060;
+  -webkit-box-shadow: 0 0 2px 0 #606060;
   box-shadow: 0 0 2px 0 #606060;
 }
 
 .footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
 }
@@ -194,7 +218,11 @@ html {
   left: -105%;
   top: 0;
   overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -208,6 +236,7 @@ html {
   left: 5px;
   height: calc(100% - 10px);
   width: calc(100% - 10px);
+  -o-object-fit: contain;
   object-fit: contain;
   /* Полифил для Edge и IE */
   font-family: 'object-fit: contain;'
