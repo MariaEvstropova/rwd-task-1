@@ -8,7 +8,8 @@
     var overlayImage = overlay.querySelector(".page-overlay__image");
 
     //Добавить обработчики событий увеличения изображений
-    galleryItems.forEach(function(item) {
+    for (var i = 0; i < galleryItems.length; i++) {
+      var item = galleryItems[i];
       item.addEventListener("click", function(event) {
         var target = event.target;
         while (target !== document && !/gallery__item/.test(target.className)) {
@@ -21,9 +22,9 @@
         if (!!index) {
           var base = "https://res.cloudinary.com/mariaevstropova/image/upload/";
           var srcSet = base + "f_auto,q_75,w_256/img-" + index + ".jpg 256w,"
-                    + base + "f_auto,q_75,w_512/img-" + index + ".jpg 512w,"
-                    + base + "f_auto,q_75,w_1024/img-" + index + ".jpg 1024w,"
-                    + base + "f_auto,q_75/img-" + index + ".jpg " + width + "w" ;
+              + base + "f_auto,q_75,w_512/img-" + index + ".jpg 512w,"
+              + base + "f_auto,q_75,w_1024/img-" + index + ".jpg 1024w,"
+              + base + "f_auto,q_75/img-" + index + ".jpg " + width + "w" ;
           var src =  base + "img-" + index + ".jpg";
 
           overlayImage.setAttribute("srcset", srcSet);
@@ -33,7 +34,7 @@
           overlay.style.left = 0;
         }
       });
-    });
+    }
 
     //Добавить обработчики событий закрытия увеличенного изображения
     var overlayCloseBtn = document.querySelector(".page-overlay__close-button");
