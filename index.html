@@ -12,79 +12,133 @@
     <div class="content-wrapper">
       <div class="introduction">
         <div class="introduction__content">
-          <h1 class="introduction__title">Невероятная природа</h1>
+          <h1 class="introduction__title">Невероятная и удивительная природа</h1>
           <div class="introduction__text">Природа удивительна, непредсказуема и прекрасна. И до сих пор не известно, сколько еще тайн она хранит в себе. Ведь есть на планете Земля такие места, глядя на которые трудно поверить, в то, что столь невероятная красота существует наяву, а не во сне!</div>
         </div>
       </div>
       <div class="content-section">
-        <div class="galery galery__inner">
+        <div class="gallery gallery__inner">
 
-          <div class="galery__item">
-            <img class="galery__image" alt="photo with leon" src="http://res.cloudinary.com/mariaevstropova/image/upload/v1499259843/img-1.jpg"/>
-            <div class="galery__cover">
-              <div class="galery__cover-inner">
-                <div class="galery__icon">&#128269;</div>
-                <div class="galery__text">by Sam Photographer</div>
+          <div class="gallery__item">
+            <!-- Используем оптимизацию изображений, предоставляемую cloudinary.com. Сжатие - 70%, формат изображения - автоматически определяется браузером. -->
+            <!-- Подробнее - http://cloudinary.com/blog/responsive_images_with_srcset_sizes_and_cloudinary -->
+            <img class="gallery__image" alt="photo-1"
+                 srcset="http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_256/img-1.jpg 256w,
+                         http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_512/img-1.jpg 512w,
+                         http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_1024/img-1.jpg 1024w,
+                         http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75/img-1.jpg 2577w"
+                 sizes="100vw, (min-width: 550px) 25vw"
+                 src="http://res.cloudinary.com/mariaevstropova/image/upload/img-1.jpg"
+            />
+            <div class="gallery__cover">
+              <div class="gallery__cover-inner">
+                <div class="gallery__icon">&#128269;</div>
+                <div class="gallery__text">by Sam Photographer</div>
               </div>
             </div>
           </div>
 
-          <div class="galery__item">
-            <img class="galery__image" alt="photo with raindeer" src="http://res.cloudinary.com/mariaevstropova/image/upload/v1499259850/img-2.jpg"/>
-            <div class="galery__cover">
-              <div class="galery__cover-inner">
-                <div class="galery__icon">&#128269;</div>
-                <div class="galery__text">by Sam Photographer</div>
+          <div class="gallery__item">
+            <img class="gallery__image" alt="photo-2"
+                 srcset="http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_256/img-2.jpg 256w,
+                         http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_512/img-2.jpg 512w,
+                         http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_1024/img-2.jpg 1024w,
+                         http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_2560/img-2.jpg 2560w,
+                         http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75/img-2.jpg 3264w"
+                 sizes="100vw, (min-width: 550px) 25vw"
+                 src="http://res.cloudinary.com/mariaevstropova/image/upload/img-2.jpg"
+            />
+            <div class="gallery__cover">
+              <div class="gallery__cover-inner">
+                <div class="gallery__icon">&#128269;</div>
+                <div class="gallery__text">by Sam Photographer</div>
               </div>
             </div>
           </div>
 
-          <div class="galery__item">
-            <img class="galery__image" alt="" src="http://res.cloudinary.com/mariaevstropova/image/upload/v1499259843/img-3.jpg"/>
-            <div class="galery__cover">
-              <div class="galery__cover-inner">
-                <div class="galery__icon">&#128269;</div>
-                <div class="galery__text">by Sam Photographer</div>
+          <div class="gallery__item">
+            <img class="gallery__image" alt="photo-3"
+                 srcset="http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_256/img-3.jpg 256w,
+                         http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_512/img-3.jpg 512w,
+                         http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_1024/img-3.jpg 1024w,
+                         http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75/img-3.jpg 1993w"
+                 sizes="100vw, (min-width: 550px) 25vw"
+                 src="http://res.cloudinary.com/mariaevstropova/image/upload/img-3.jpg"
+            />
+            <div class="gallery__cover">
+              <div class="gallery__cover-inner">
+                <div class="gallery__icon">&#128269;</div>
+                <div class="gallery__text">by Sam Photographer</div>
               </div>
             </div>
           </div>
 
-          <div class="galery__item">
-            <img class="galery__image" alt="" src="http://res.cloudinary.com/mariaevstropova/image/upload/v1499259843/img-4.jpg"/>
-            <div class="galery__cover">
-              <div class="galery__cover-inner">
-                <div class="galery__icon">&#128269;</div>
-                <div class="galery__text">by Sam Photographer</div>
+          <div class="gallery__item">
+            <img class="gallery__image" alt="photo-4"
+                 srcset="http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_256/img-4.jpg 256w,
+                         http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_512/img-4.jpg 512w,
+                         http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_1024/img-4.jpg 1024w,
+                         http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75/img-4.jpg 2560w"
+                 sizes="100vw, (min-width: 550px) 25vw"
+                 src="http://res.cloudinary.com/mariaevstropova/image/upload/img-4.jpg"
+            />
+            <div class="gallery__cover">
+              <div class="gallery__cover-inner">
+                <div class="gallery__icon">&#128269;</div>
+                <div class="gallery__text">by Sam Photographer</div>
               </div>
             </div>
           </div>
 
-          <div class="galery__item">
-            <img class="galery__image" alt="" src="http://res.cloudinary.com/mariaevstropova/image/upload/v1499259843/img-5.jpg"/>
-            <div class="galery__cover">
-              <div class="galery__cover-inner">
-                <div class="galery__icon">&#128269;</div>
-                <div class="galery__text">by Sam Photographer</div>
+          <div class="gallery__item">
+            <img class="gallery__image" alt="photo-5"
+                 srcset="http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_256/img-5.jpg 256w,
+                         http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_512/img-5.jpg 512w,
+                         http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_1024/img-5.jpg 1024w,
+                         http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75/img-5.jpg 2854w"
+                 sizes="100vw, (min-width: 550px) 25vw"
+                 src="http://res.cloudinary.com/mariaevstropova/image/upload/img-5.jpg"
+            />
+            <div class="gallery__cover">
+              <div class="gallery__cover-inner">
+                <div class="gallery__icon">&#128269;</div>
+                <div class="gallery__text">by Sam Photographer</div>
               </div>
             </div>
           </div>
 
-          <div class="galery__item">
-            <img class="galery__image" alt="" src="http://res.cloudinary.com/mariaevstropova/image/upload/v1499259843/img-6.jpg"/>
-            <div class="galery__cover">
-              <div class="galery__cover-inner">
-                <div class="galery__icon">&#128269;</div>
-                <div class="galery__text">by Sam Photographer</div>
+          <div class="gallery__item">
+            <img class="gallery__image" alt="photo-6"
+                 srcset="http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_256/img-6.jpg 256w,
+                         http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_512/img-6.jpg 512w,
+                         http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_1024/img-6.jpg 1024w,
+                         http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_2560/img-6.jpg 2560w,
+                         http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75/img-6.jpg 4000w"
+                 sizes="100vw, (min-width: 550px) 25vw"
+                 src="http://res.cloudinary.com/mariaevstropova/image/upload/img-6.jpg"
+            />
+            <div class="gallery__cover">
+              <div class="gallery__cover-inner">
+                <div class="gallery__icon">&#128269;</div>
+                <div class="gallery__text">by Sam Photographer</div>
               </div>
             </div>
           </div>
 
-          <div class="galery__item">
-            <img class="galery__image" alt="" src="http://res.cloudinary.com/mariaevstropova/image/upload/v1499259843/img-7.jpg"/>
-            <div class="galery__cover">
-              <div class="galery__cover-inner">
-                <div class="galery__icon">&#128269;</div>
-                <div class="galery__text">by Sam Photographer</div>
+          <div class="gallery__item">
+            <img class="gallery__image" alt="photo-7"
+                 srcset="http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_256/img-7.jpg 256w,
+                         http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_512/img-7.jpg 512w,
+                         http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_1024/img-7.jpg 1024w,
+                         http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_2560/img-7.jpg 2560w,
+                         http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75/img-7.jpg 3456w"
+                 sizes="100vw, (min-width: 550px) 25vw"
+                 src="http://res.cloudinary.com/mariaevstropova/image/upload/img-7.jpg"
+            />
+            <div class="gallery__cover">
+              <div class="gallery__cover-inner">
+                <div class="gallery__icon">&#128269;</div>
+                <div class="gallery__text">by Sam Photographer</div>
               </div>
             </div>
           </div>
@@ -98,9 +152,20 @@
         </div>
       </footer>
       <div class="page-overlay">
-        <img class="page-overlay__image"/>
+        <div class="page-overlay__wrapper">
+          <img class="page-overlay__image" alt="photo-7"
+               srcset="http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_256/img-7.jpg 256w,
+                     http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_512/img-7.jpg 512w,
+                     http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_1024/img-7.jpg 1024w,
+                     http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_2560/img-7.jpg 2560w,
+                     http://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75/img-7.jpg 3456w"
+               sizes="100vw"
+               src="http://res.cloudinary.com/mariaevstropova/image/upload/img-7.jpg"
+          />
+        </div>
       </div>
     </div>
     <script type="text/javascript" src="script/index.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.min.js"></script>
   </body>
 </html>
