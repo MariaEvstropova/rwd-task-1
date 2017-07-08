@@ -4,8 +4,8 @@
     objectFitImages();
 
     var galleryItems = document.querySelectorAll(".gallery__item");
-    var overlay = document.querySelector(".page-overlay");
-    var overlayImage = overlay.querySelector(".page-overlay__image");
+    var overlay = document.querySelector(".overlay");
+    var overlayImage = overlay.querySelector(".overlay__image");
 
     //Добавить обработчики событий увеличения изображений
     for (var i = 0; i < galleryItems.length; i++) {
@@ -31,15 +31,15 @@
           overlayImage.setAttribute("sizes", "100vw");
           overlayImage.setAttribute("src", src);
 
-          overlay.className = removeClassName(overlay, "page-overlay_closed");
+          overlay.className = removeClassName(overlay, "overlay_closed");
         }
       });
     }
 
     //Добавить обработчики событий закрытия увеличенного изображения
-    var overlayCloseBtn = document.querySelector(".page-overlay__close-button");
+    var overlayCloseBtn = document.querySelector(".overlay__close-button");
     overlayCloseBtn.addEventListener("click", function() {
-      overlay.className = addClassName(overlay, "page-overlay_closed");
+      overlay.className = addClassName(overlay, "overlay_closed");
 
       setTimeout(function() {
         overlayImage.removeAttribute("srcset");
