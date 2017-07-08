@@ -24,7 +24,7 @@
           <div class="gallery__item" data-index="1" data-width="2577">
             <!-- Используем оптимизацию изображений, предоставляемую cloudinary.com. Сжатие - 70%, формат изображения - автоматически определяется браузером. -->
             <!-- Подробнее - https://cloudinary.com/blog/responsive_images_with_srcset_sizes_and_cloudinary -->
-            <img class="gallery__image" alt="photo-1"
+            <img class="image gallery__image" alt="photo-1"
                  srcset="https://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_256/img-1.jpg 256w,
                          https://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_512/img-1.jpg 512w,
                          https://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_1024/img-1.jpg 1024w,
@@ -41,7 +41,7 @@
           </div>
 
           <div class="gallery__item" data-index="2" data-width="3264">
-            <img class="gallery__image" alt="photo-2"
+            <img class="image gallery__image" alt="photo-2"
                  srcset="https://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_256/img-2.jpg 256w,
                          https://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_512/img-2.jpg 512w,
                          https://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_1024/img-2.jpg 1024w,
@@ -59,7 +59,7 @@
           </div>
 
           <div class="gallery__item" data-index="3" data-width="1993">
-            <img class="gallery__image" alt="photo-3"
+            <img class="image gallery__image" alt="photo-3"
                  srcset="https://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_256/img-3.jpg 256w,
                          https://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_512/img-3.jpg 512w,
                          https://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_1024/img-3.jpg 1024w,
@@ -76,7 +76,7 @@
           </div>
 
           <div class="gallery__item" data-index="4" data-width="2560">
-            <img class="gallery__image" alt="photo-4"
+            <img class="image gallery__image" alt="photo-4"
                  srcset="https://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_256/img-4.jpg 256w,
                          https://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_512/img-4.jpg 512w,
                          https://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_1024/img-4.jpg 1024w,
@@ -93,7 +93,7 @@
           </div>
 
           <div class="gallery__item" data-index="5" data-width="2854">
-            <img class="gallery__image" alt="photo-5"
+            <img class="image gallery__image" alt="photo-5"
                  srcset="https://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_256/img-5.jpg 256w,
                          https://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_512/img-5.jpg 512w,
                          https://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_1024/img-5.jpg 1024w,
@@ -110,7 +110,7 @@
           </div>
 
           <div class="gallery__item" data-index="6" data-width="4000">
-            <img class="gallery__image" alt="photo-6"
+            <img class="image gallery__image" alt="photo-6"
                  srcset="https://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_256/img-6.jpg 256w,
                          https://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_512/img-6.jpg 512w,
                          https://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_1024/img-6.jpg 1024w,
@@ -128,7 +128,7 @@
           </div>
 
           <div class="gallery__item" data-index="7" data-width="3456">
-            <img class="gallery__image" alt="photo-7"
+            <img class="image gallery__image" alt="photo-7"
                  srcset="https://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_256/img-7.jpg 256w,
                          https://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_512/img-7.jpg 512w,
                          https://res.cloudinary.com/mariaevstropova/image/upload/f_auto,q_75,w_1024/img-7.jpg 1024w,
@@ -154,10 +154,8 @@
         </div>
       </footer>
       <div class="overlay page__overlay overlay_closed">
-        <div class="overlay__wrapper">
-          <div class="button overlay__close-button">&times;</div>
-          <img class="overlay__image" alt="detailed-photo"/>
-        </div>
+        <div class="button overlay__close-button">&times;</div>
+        <img class="image overlay__image" alt="detailed-photo"/>
       </div>
     </div>
     <script type="text/javascript" src="script/index.js"></script>
