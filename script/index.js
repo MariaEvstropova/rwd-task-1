@@ -31,7 +31,7 @@
           overlayImage.setAttribute("sizes", "100vw");
           overlayImage.setAttribute("src", src);
 
-          overlay.style.left = 0;
+          overlay.className = removeClassName(overlay, "page-overlay_closed");
         }
       });
     }
@@ -39,7 +39,7 @@
     //Добавить обработчики событий закрытия увеличенного изображения
     var overlayCloseBtn = document.querySelector(".page-overlay__close-button");
     overlayCloseBtn.addEventListener("click", function() {
-      overlay.style.left = "-105%";
+      overlay.className = addClassName(overlay, "page-overlay_closed");
 
       setTimeout(function() {
         overlayImage.removeAttribute("srcset");
@@ -47,5 +47,13 @@
         overlayImage.removeAttribute("src");
       }, 500);
     });
+
+    function addClassName(element, name) {
+      return element.className + " " + name;
+    }
+
+    function removeClassName(element, name) {
+      return element.className.replace(name, "").trim();
+    }
   });
 })();
